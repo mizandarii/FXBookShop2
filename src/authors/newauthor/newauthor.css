@@ -1,0 +1,6 @@
+.info{
+    -fx-text-fill: #08a93e;
+}
+.infoError{
+    -fx-text-fill: #e13f0b; 
+}

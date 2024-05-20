@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbListBooksRoot" alignment="TOP_CENTER" prefHeight="500.0" prefWidth="600.0" VBox.vgrow="ALWAYS" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="books.listbooks.ListbooksController">
+   <children>
+      <Label alignment="CENTER" prefHeight="35.0" prefWidth="600.0" text="Список книг">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbSale" text="Большая летняя скидка">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin></Label>
+      <ScrollPane fitToWidth="true">
+         <content>
+            <TilePane fx:id="tpListBooksContent" alignment="TOP_CENTER" hgap="10.0" prefHeight="437.0" prefWidth="392.0" vgap="10.0">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </TilePane>
+         </content>
+      </ScrollPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" />
+   </padding>
+</VBox>
