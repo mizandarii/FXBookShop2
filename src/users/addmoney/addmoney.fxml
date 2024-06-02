@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="users.addmoney.AddmoneyController">
+   <children>
+      <HBox alignment="TOP_CENTER" prefHeight="41.0" prefWidth="600.0">
+         <children>
+            <Label text="Добавление денег на счет">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label text="Текущий баланс:">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="lbBalance" text="Label">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="51.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="tfAddMoney" prefHeight="25.0" prefWidth="376.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="btConfirm" mnemonicParsing="false" onAction="#updateBalance" text="Подтвердить" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="20.0" />
+   </padding>
+</VBox>
